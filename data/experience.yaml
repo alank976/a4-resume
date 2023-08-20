@@ -1,0 +1,18 @@
+- company: FinoComp (Bravura Solutions)
+  location: Wollongong, Australia
+  roles:
+    - role: Software Engineer
+      details: |
+        TODO: finocomp 
+      date: "Feb 2021 - Present"
+- company: Mox Bank
+  location: Hong Kong
+  roles: 
+    - role: Staff Engineer
+      details: |
+        - Develop web services as a part of the distributed system in microservices, event-driven architecture for the FinTech (Virtual Bank) business
+        - Build shared libraries including Spring Boot starters, stuff for OAuth2, API contracts, Kafka, gradle plugins, codegen, test framework in order to make fellow developers lives easier
+        - Develop notification and OTP verification microservices
+        - Involve in design and architectural discussion and implementation, e.g. idempotency, fault tolerance, API contract-first design
+      date: "Jul 2019 - Jan 2021"
+# TODO: more
