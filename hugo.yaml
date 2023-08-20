@@ -49,18 +49,18 @@ params:
   useFontAwesome: true
   css:
     - custom.scss
-#   - print_urls.scss
+    - print_urls.scss
   header:
     avatar: avatar.jpg
     contact: true
     tagline: true
     links: true
   side:
-    - feature: languages
     - feature: skills
       widget: word-list
       style: compact # list, compact, title-list
-    - feature: education
+    - feature: languages
+      style: compact
     - feature: interests
       widget: word-list
       style: list
@@ -69,29 +69,22 @@ params:
         - feature: about
           title: About Me
         - feature: experience
+        - feature: education
     - features: # 2nd page
-        - feature: projects
-          collection: projects
-        - feature: publications
-          style: IEEE # IEEE, APA, else
-        - feature: awards
         - feature: certificates
           title: Certifications
-        - feature: interests
-          widget: word-list
-          style: list
-        
+        - feature: projects
+          title: Toy Projects
+          collection: projects
+        - feature: awards
+          style: compact
   footer:
     show: true
     credits: true
     footnote: >-
-      You can print this resume in A4 size or save as pdf. | Last update on 2020-09-01.
+      You can print this resume in A4 size or save as pdf. | Last update on 2023-08-20.
     links:
       - prefix: Contact me on
         title: Linkedin
-        url: 'https://linkedin.com/in/mertbakir/'
+        url: https://www.linkedin.com/in/alankan976/
         icon: fab fa-linkedin
-      - prefix: Check out my
-        title: Website
-        url: 'https://mertbakir.gitlab.io/about/'
-        icon: fas fa-globe

@@ -1,17 +1,26 @@
 projects:
-- title: "Simulated Annealing for Traveling Salesman Problem"
-  subtitle: "Some University"
-  date: "2016"
+- title: DigitalOcean Kubernetes Challenge
+  date: 2021
   details: |
-    Lorem ipsum dolor sit amet
-
-- title: "Resume - A4"
-  subtitle: "mertbakir.gitlab.io/resume"
-  link: "https://gitlab.com/mertbakir/resume-a4"
-  date: "2020"
+    explored, deployed and demonstrated use of [vcluster](https://www.vcluster.com) in a DigitalOcean k8s cluster
+  links: 
+    - url: https://github.com/alank976/doks-vcluster-challenge
+      icon: fab fa-github
+- title: A few Rust toy projects developed intermittently
+  date: 2020 - 2021
   details: |
-    Bring CI/CD to your resume using YAML and Git."
+    To acquire a taste for Rust with Actix, Tide, async/await, Cloudflare Workers, and FaunaDB with/without plain old Java dependency injection mindset
   links:
-  - title: Available in GitLab
-    url: https://gitlab.com/mertbakir/resume-a4
-    icon: fab fa-gitlab
+    - title: A project using generic to achieve abstraction & static dispatching
+      url: https://github.com/alank976/commuter-service
+      icon: fab fa-github
+    - title: A project using Cloudflare Workers and WASM
+      url: https://github.com/alank976/vocab-mate
+      icon: fab fa-github
+- title: TradeMatching
+  date: 2019
+  details: |
+    buy & sell trade matching in reactive stream manner using Reactor, Spring webflux and Gradle Kotlin DSL
+  links:
+    - url: https://github.com/alank976/TradeMatching
+      icon: fab fa-github

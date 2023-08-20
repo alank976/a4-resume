@@ -1,60 +1,97 @@
+# This file acts as "miscellaneous"
+about: 
+  name: Alan Kan
+  tagline: Software Engineer
+  phone: +61 434 220 172
+  email: alankan976@gmail.com
+  links:
+    - title: alankan976
+      url: https://www.linkedin.com/in/alankan976/
+      icon: fab fa-linkedin
+    - title: alank976
+      url: https://github.com/alank976
+      icon: fab fa-github
+    - title: alank976
+      url: https://wellfound.com/u/alank976
+      icon: fab fa-angellist
+  details: |
+    TODO: details
+
 skills:
-  - groupName: Databases & Visualization
+  - groupName: Programming
+    list: 
+      - Kotlin, Java, Groovy
+      - Go, Rust
+      - Python, Javascript/Typescript
+  - groupName: Application Framework
     list:
-      - Grafana - Kibana - PowerBI
-      - InfluxDB - TICK Stack
-
-  - groupName: Data Analysis & Analytics
+      - Spring, Micronaut
+      - gin-gonic, Actix
+      - Flask
+  - groupName: Containers & Kubernetes
     list:
-      - Python - R - SQL
-      - Excel - Minitab - SPSS
-      - GAMS - PuLP - OR Tools
-
-  - groupName: Programming & Systems
+      - Docker, containerd
+      - k3s, RKE, kind
+      - Helm, Rancher, Istio
+  - groupName: CI/CD
     list:
-      - C# - Git - Docker - NGINX
-      - Linux - CentOS RHEL
+      - Jenkins, CircleCI, TeamCity, Github Action
+      - Spinnaker, ArgoCD(beginner), Rancher Fleet (beginner)
+  - groupName: Infrastructure as Code
+    list: [Terraform, Ansible]
+  - groupName: Technical Methodogies & Architectures
+    list: 
+      - Microservices, Domain-driven Design (DDD), Event Sourcing, CQRS
+      - Test-driven Design (TDD), Pair Programming
+  - groupName: Data & Observabilities
+    list:
+      - Postgres, SQL Server, MongoDB, Redis, InfluxDB, Kafka
+      - Flyway, Liquibase
+      - FluentBit, Elastic, Kibana, DataDog, Prometheus, Grafana
+  - groupName: Automated Testing & Quality
+    list:
+      - JUnit 5, mockk, Spock, Cucumber, Ginkgo, K6
+      - Snyk, Sonar
+  - groupName: Authentication
+    list:
+      - OAuth2, FusionAuth, Keycloak
 
 interests:
-  - Data Science
-  - AI Applications
-  - Optimization Problems
+  - Coding
+  - Architecture Discussions
+  - Software Craftsmanship
 
 languages:
-  - name: Turkish
-    level: Native
-
   - name: English
-    level: Professional
-    certificates:
-      - "YDS: 86.25 - 2018"
-      - "TOEFL: 109 - 2021"
+    level: Fluent
+  - name: Cantonese
+    level: Native
+  - name: Mandarin
+    level: Fluent
 
 # This will use the default widget: "details-list"
 awards:
-  - title: "Tübitak - Graduation Project"
-    date: "2017"
-    subtitle: "A Decision Support System for 3D Cutting Problem"
-    #details: |
-    #   - add more here if you like to.
-    #   - or just comment out/delete the field.
+  - title: "Quant Finance Lab of CASH Algo Finance Group (CAFG) - Hong Kong"
+    date: "2015 - 2016"
+    subtitle: "Team Leader, Inter-University Algo Trading Contest"
+    details: |
+      - Researched and developed quantitative models, trading algorithms trading program with Python
+      - Shortlisted for final round (12 teams picked out of 70)
     links:
-      - title: example
-        url: https://mertbakir.gitlab.io
-        icon: fas fa-bolt
-        prefix: "This is an " # use quotation marks if you want to pass the tailing space.
-      - title: second link.
-        url: https://esdfdsfdsf
-        icon: "-" # you can get rid of the icon by entering dummy text
-        prefix: "omg"
+      - title: "Contest website"
+        url: http://algocontest.cashalgo.com/
+        icon: ""
 
 certificates:
-  - title: "Supervised Learning: Regression"
-    subtitle: Coursera
-    date: "2020"
-    link: https://xkcd.com/605/ # This link will be on title level.
-
-  - title: "Supervised Learning: Classification"
-    subtitle: Coursera
-    date: "2020"
-    link: https://xkcd.com/388/
+  - title: "CKA: Certified Kubernetes Administrator"
+    subtitle: The Linux Foundation
+    date: 2023
+    link: https://www.credly.com/badges/180c48b8-8281-4bf1-a9e8-7e96747e9a29
+  - title: Hands-On Systems Programming with Rust
+    subtitle: Udemy
+    date: 2021
+    link: https://www.udemy.com/certificate/UC-299dbc39-4644-4d01-96f7-d81184f58828/
+  - title: Financial Risk Manager (FRM®)
+    subtitle: Global Association of Risk Professionals (GARP)
+    date: 2015
+    link: https://my.garp.org/DigitalBadgeFRM?id=0034000001aeLt9AAE
