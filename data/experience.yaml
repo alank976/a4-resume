@@ -4,7 +4,7 @@
   roles:
     - role: Software Engineer
       details: |
-        - Developed software within a distributed microservices ecosystem for a wealth management platform business.
+        - Developed software within a distributed microservices ecosystem for multiple wealth management platform businesses.
         - Proficiently provisioned, deployed, and managed testing environments and development infrastructures across AWS, Azure, GCP, and on-premises setups, leveraging a highly automated approach.
         - Mentored junior engineers by actively engaging in pair programming and conducting regular knowledge-sharing sessions.
         - Demonstrated proactive involvement in technical design and architectural deliberations.
@@ -16,7 +16,7 @@
     - role: Staff Engineer, Backend
       details: |
         - Developed web services as a part of the distributed system in microservices, event-driven architecture for the FinTech (Virtual Banking) business.
-        - Built shared internal framework & libraries incl. Spring Boot starters, Gradle plugins, libraries for OAuth2, API contracts codegen, Kafka, testing framework to make product team developers lives easier.
+        - Built shared internal framework & libraries incl. Spring Boot starters, Gradle plugins, libraries for OAuth2, API contracts codegen, Kafka, testing framework to make product team developer lives easier.
         - Developed notification and OTP verification microservices.
         - Designed and involved in architecturing, design and implementation, such as fault tolerance, API contract-first design.
       date: "Jul 2019 - Jan 2021"
