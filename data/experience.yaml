@@ -1,18 +1,23 @@
 - company: FinoComp (Bravura Solutions)
   location: Wollongong, Australia
+  url: https://www.finocomp.com/
   roles:
     - role: Software Engineer
       details: |
-        TODO: finocomp 
+        - Developed software within a distributed microservices ecosystem for a wealth management platform business.
+        - Proficiently provisioned, deployed, and managed testing environments and development infrastructures across AWS, Azure, GCP, and on-premises setups, leveraging a highly automated approach.
+        - Mentored junior engineers by actively engaging in pair programming and conducting regular knowledge-sharing sessions.
+        - Demonstrated proactive involvement in technical design and architectural deliberations.
       date: "Feb 2021 - Present"
 - company: Mox Bank
   location: Hong Kong
+  url: https://mox.com
   roles: 
-    - role: Staff Engineer
+    - role: Staff Engineer, Backend
       details: |
-        - Develop web services as a part of the distributed system in microservices, event-driven architecture for the FinTech (Virtual Bank) business
-        - Build shared libraries including Spring Boot starters, stuff for OAuth2, API contracts, Kafka, gradle plugins, codegen, test framework in order to make fellow developers lives easier
-        - Develop notification and OTP verification microservices
-        - Involve in design and architectural discussion and implementation, e.g. idempotency, fault tolerance, API contract-first design
+        - Developed web services as a part of the distributed system in microservices, event-driven architecture for the FinTech (Virtual Banking) business.
+        - Built shared internal framework & libraries incl. Spring Boot starters, Gradle plugins, libraries for OAuth2, API contracts codegen, Kafka, testing framework to make product team developers lives easier.
+        - Developed notification and OTP verification microservices.
+        - Designed and involved in architecturing, design and implementation, such as fault tolerance, API contract-first design.
       date: "Jul 2019 - Jan 2021"
-# TODO: more
+

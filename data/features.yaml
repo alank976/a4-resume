@@ -15,7 +15,15 @@ about:
       url: https://wellfound.com/u/alank976
       icon: fab fa-angellist
   details: |
-    TODO: details
+    I'm a software enthusiast who's spent 7 years exploring the ins and outs of the FinTech and Investment banking worlds. My coding journey has been a mix of Java, Kotlin, Go, and Python, resulting in a blend of creative solutions and practical experience.
+
+    Recently, I've been diving into the world of Rust, experimenting with various toy projects that showcase to acquire a taste for it.
+
+    Orchestration is a must in modern microservices architecture. When it comes to Kubernetes, I'm the go-to person, and using tools like Terraform is my specialty - I engineer structured infrastructure setups that empower the team to thrive even in my absence.
+
+    While I can certainly handle frontend development using React and so on, I feel most at home delving into the depths of backend work and the intricacies of DevOps.
+
+    What really drives me? The unending desire to learn. I regularly explore online articles, browse through dev.to discussions, and even tune into online conferences. I'm not just riding the tech wave; I'm shaping it by staying ahead of the curve on backend, DevOps, and architectural trends.
 
 skills:
   - groupName: Programming
@@ -26,17 +34,14 @@ skills:
   - groupName: Application Framework
     list:
       - Spring, Micronaut
-      - gin-gonic, Actix
-      - Flask
+      - gin-gonic, Actix, Flask, React
   - groupName: Containers & Kubernetes
     list:
       - Docker, containerd
-      - k3s, RKE, kind
-      - Helm, Rancher, Istio
+      - k3s, Helm, Rancher, Istio
   - groupName: CI/CD
     list:
       - Jenkins, CircleCI, TeamCity, Github Action
-      - Spinnaker, ArgoCD(beginner), Rancher Fleet (beginner)
   - groupName: Infrastructure as Code
     list: [Terraform, Ansible]
   - groupName: Technical Methodogies & Architectures
@@ -45,21 +50,16 @@ skills:
       - Test-driven Design (TDD), Pair Programming
   - groupName: Data & Observabilities
     list:
-      - Postgres, SQL Server, MongoDB, Redis, InfluxDB, Kafka
-      - Flyway, Liquibase
+      - Postgres, SQL Server, Kafka, MongoDB
       - FluentBit, Elastic, Kibana, DataDog, Prometheus, Grafana
-  - groupName: Automated Testing & Quality
-    list:
-      - JUnit 5, mockk, Spock, Cucumber, Ginkgo, K6
-      - Snyk, Sonar
   - groupName: Authentication
     list:
       - OAuth2, FusionAuth, Keycloak
 
 interests:
   - Coding
-  - Architecture Discussions
   - Software Craftsmanship
+  - Software Architecture
 
 languages:
   - name: English
