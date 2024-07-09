@@ -83,6 +83,10 @@ awards:
         icon: ""
 
 certificates:
+  - title: "CKS: Certified Kubernetes Security Specialist"
+    subtitle: The Linux Foundation
+    date: 2024
+    link: https://www.credly.com/badges/0b821ea9-0b08-4780-85f8-4179fd68d197
   - title: "CKA: Certified Kubernetes Administrator"
     subtitle: The Linux Foundation
     date: 2023
