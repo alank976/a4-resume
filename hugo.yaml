@@ -34,12 +34,12 @@ params:
           widget: exp2
           title: ""
           collection: exp2
-        - feature: education
         - feature: certificates
           title: Certifications
+    - features:     
+        - feature: education
         - feature: awards
           style: compact
-    - features:       
         - feature: projects
           title: Toy Projects
           collection: projects
@@ -48,7 +48,7 @@ params:
     show: true
     credits: true
     footnote: >-
-      You can print this resume in A4 size or save as pdf. | Last update on 2023-08-20.
+      You can print this resume in A4 size or save as pdf. | Last update on 2024-07-10.
     links:
       - prefix: Contact me on
         title: Linkedin
