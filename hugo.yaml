@@ -30,10 +30,7 @@ params:
         - feature: experience
     - features: # 2nd page
         # Each page is in A4 size only. Cannot flex over so here's a hack to split pages nicely
-        - feature: exp2
-          widget: exp2
-          title: ""
-          collection: exp2
+        - feature: experience
         - feature: certificates
           title: Certifications
     - features:     
@@ -43,7 +40,11 @@ params:
         - feature: projects
           title: Toy Projects
           collection: projects
-        
+  experience:
+    tools: 
+      show: true
+      title: Technologies
+
   footer:
     show: true
     credits: true

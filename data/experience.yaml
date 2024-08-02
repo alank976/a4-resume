@@ -1,8 +1,10 @@
 - company: FinoComp (Bravura Solutions)
   location: Wollongong, Australia
   url: https://www.finocomp.com/
+  page: 1
   roles:
     - role: Software Engineer
+      tools: Java, Micronaut, Kafka, k8s, Terraform
       details: |
         - Developed software within a distributed microservices ecosystem for multiple wealth management platform businesses.
         - Proficiently provisioned, deployed, and managed testing environments and development infrastructures across AWS, Azure, GCP, and on-premises setups, leveraging a highly automated approach.
@@ -12,12 +14,39 @@
 - company: Mox Bank
   location: Hong Kong
   url: https://mox.com
+  page: 1
   roles: 
     - role: Staff Engineer, Backend
+      tools: Kotlin, Spring Boot, Kafka, k8s, Istio
       details: |
-        - Developed web services as a part of the distributed system in microservices, event-driven architecture for the FinTech (Virtual Banking) business.
+        - Developed web services (e.g. SMS/Push/OTP notification & verification) as a part of the distributed system in microservices, event-driven architecture for the FinTech (Virtual Banking) business.
         - Built shared internal framework & libraries incl. Spring Boot starters, Gradle plugins, libraries for OAuth2, API contracts codegen, Kafka, testing framework to make product team developer lives easier.
-        - Developed notification and OTP verification microservices.
         - Designed and involved in architecturing, design and implementation, such as fault tolerance, API contract-first design.
       date: "Jul 2019 - Jan 2021"
-
+# Page 2
+- company: YouTrip
+  location: Hong Kong
+  url: https://www.you.co/
+  page: 2
+  roles: 
+    - role: Software Engineer
+      tools: Go, gRPC, Kafka, k6
+      details: |
+        - Developed microservices for different FinTech business domains, e.g. FX, reporting, etc in event-driven architectural design.
+        - Promoted best practices about Agile, XP methodologies.
+        - Worked with the rest in the company altogether, like DevOps, Product, Data, etc as in a dynamic startup atmosphere.
+      date: "Apr 2019 - Jul 2019"
+- company: Société Générale
+  location: Hong Kong
+  url: https://www.societegenerale.com/en
+  page: 2
+  roles:
+    - role: Front Office Developer
+      tools: Java, Kotlin, Spring, Python, CQRS, VBA
+      date: "Jun 2016 - Dec 2018"
+      details: |
+        - Developed applications for synthetic prime brokerage, Delta one and Equity finance business in agile software development manner.
+        - Worked closely with front office to understand user requirements and identify business priorities.
+        - Delivered quality solution to support business growth and also care code cleanliness, and maintainability.
+        - Leveraged latest technologies and software craftsmanship methodologies to further improve quality of end product and also team productivity.
+      

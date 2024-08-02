@@ -1,25 +1,26 @@
 {{ range .Data.experience }}
+{{ $page := .page | default 1 }}
+{{- if eq $.Page $page -}}
 <div class="item group">
-	<div class="flex-row">
-		<h2 class="item-title">
-			{{ if .url }}
-                <a href="{{ .url }}">{{ .company }}</a>
-            {{ else }}
-                {{ .company }}
-			{{ end }}
-		</h2>
-		<span class="item-info">{{ .location }}</span>
-	</div>
+	<h2 class="item-title">{{ .company }}</h2>
 	{{ range .roles }}
 	<div class="item">
 		<div class="flex-row">
 			<span class="job-title">{{ .role }}</span>
-			<span class="date">{{ .date }}</span>
+			<span class="soft-color">{{ .date }}</span>
 		</div>
+		
+		{{- if and $.Params.experience.tools.show .tools -}}
+		{{/* Customization here. Making it aligned to left */}}
+		<div class="tools-row">
+		<span class="soft-color"><i>{{ $.Params.experience.tools.title }}: {{ .tools }}</i></span></div>
+		{{- end -}}
+
 		{{ if .details }}
 		{{- partial "markdown" .details }}
 		{{ end }}
 	</div>
 	{{ end }}
 </div>
+{{- end -}}
 {{ end }}
