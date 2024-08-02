@@ -1,9 +1,11 @@
 - name: "MSc in Financial Engineering"
   university: "City University of Hong Kong"
-  more: "specialized in financial modelling with programming"
+  details: >
+    Specialized in financial modelling with programming
   date: "2015 - 2016"
   gpa: "3.87 / 4.00"
 - name: "BSc in Major in Computing and Minor in Business"
   university: "The Hong Kong Polytechnic University"
-  more: "specialized in OOP, Android app development, etc"
+  details: > 
+    Specialized in OOP, Android app development, etc
   date: "2008 - 2011"
