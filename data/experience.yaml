@@ -9,7 +9,7 @@
       details: |
         - Architected and delivered an Firebase-based push notification system utilizing event-driven architecture patterns such as CQRS, event sourcing and outbox patterns to ensure scalability and fault tolerance across distributed systems
         - Established engineering excellence standards by championing TDD and implementing comprehensive testing frameworks across the team. 
-        - Enhanced system Observability through distributed tracing for Kafka message flows, Auth0 post-login action monitoring and disaster recovery mechanisms, significantly improving system reliability and debugging efficiency.
+        - Enhanced system observability through distributed tracing for Kafka message flows, Auth0 post-login action monitoring and disaster recovery mechanisms, significantly improving system reliability and debugging efficiency.
         - Identified and remediated critical security vulnerabilities through both immediate tactical fixes and long-term architectural improvements, demonstrating strong security awareness and proactive risk management.
         - Drive technical evolution by actively participating in architectural discussions and leading initiatives to decommision legacy systems, contributing to cleaner, more maintainable codebases and modern design patterns.
         - Provide technical leadership through hands-on mentorship of junior and mid-level developers, conducting pair programming sessions if needed and delivering actionable feedback through thorough code reviews to elevate team capabilities.
