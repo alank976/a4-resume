@@ -50,7 +50,7 @@ skills:
       - Test-driven Design (TDD), Pair Programming
   - groupName: Data & Observabilities
     list:
-      - Postgres, SQL Server, Kafka, MongoDB
+      - Kafka, Postgres, SQL Server, MongoDB
       - FluentBit, Elastic, Kibana, DataDog, Prometheus, Grafana
   - groupName: Authentication
     list:

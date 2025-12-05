@@ -5,7 +5,7 @@
   roles: 
     - role: Senior Software Engineer
       date: "Oct 2024 - Present"
-      tools: Go, AWS, Cloudevents, Event-driven architecture (MSK and also EventBridge), OAuth2 (Auth0), Typescript, React, React Native
+      tools: Go, AWS, Event-driven architecture (MSK & EventBridge), OAuth2 (Auth0), Typescript, Terraform, Github Actions, React, React Native
       details: |
         - Architected and delivered an Firebase-based push notification system utilizing event-driven architecture patterns such as CQRS, event sourcing and outbox patterns to ensure scalability and fault tolerance across distributed systems
         - Established engineering excellence standards by championing TDD and implementing comprehensive testing frameworks across the team. 
@@ -21,7 +21,7 @@
   page: 2
   roles:
     - role: Software Engineer
-      tools: Java, Micronaut, Kafka, k8s, Terraform
+      tools: Java, Micronaut, Kafka, k8s, Terraform, TeamCity
       details: |
         - Developed software within a distributed microservices ecosystem for multiple wealth management platform businesses.
         - Proficiently provisioned, deployed, and managed testing environments and development infrastructures across AWS, Azure, GCP, and on-premises setups, leveraging a highly automated approach.
