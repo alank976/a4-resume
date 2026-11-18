@@ -37,3 +37,9 @@ next-env.d.ts
 
 # ide
 .idea
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+tfplan
+crash.log

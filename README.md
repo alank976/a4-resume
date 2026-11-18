@@ -20,6 +20,12 @@ Pushing to `main` builds and deploys the site with
 [`.github/workflows/pages.yml`](.github/workflows/pages.yml). Pull requests
 only build it.
 
+## Domain
+
+`cv.alankan.dev` is set up with Terraform in [`infra/`](infra/README.md):
+Cloudflare DNS, a redirect from the old `a4-resume.alankan.dev`, and the
+GitHub Pages custom domain.
+
 ## What else is published
 
 - `/cv.md`: the CV as markdown
