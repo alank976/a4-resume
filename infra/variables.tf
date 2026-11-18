@@ -27,15 +27,3 @@ variable "github_repository" {
   type        = string
   default     = "a4-resume"
 }
-
-variable "enforce_https" {
-  description = <<-EOT
-    Redirect http:// to https:// on GitHub Pages. GitHub only allows this once
-    it has issued the certificate for the domain, a one-off that takes a few
-    minutes to an hour after the domain changes. If you change the domain, set
-    this to null for that apply, then back to true once the certificate is
-    ready.
-  EOT
-  type        = bool
-  default     = true
-}
