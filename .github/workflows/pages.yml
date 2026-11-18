@@ -35,10 +35,12 @@ jobs:
       - run: pnpm check
       - name: Build static site
         env:
-          # The Pages URL, which is the custom domain when one is set.
-          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          # The Pages URL, which is the custom domain when one is set. GitHub
+          # reports it as http:// until the domain's certificate is issued, so
+          # always publish https:// links.
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
           NEXT_TELEMETRY_DISABLED: "1"
-        run: pnpm build
+        run: SITE_URL="${BASE_URL/#http:/https:}" pnpm build
       - name: Upload artifact
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v4
