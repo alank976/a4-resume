@@ -30,11 +30,12 @@ variable "github_repository" {
 
 variable "enforce_https" {
   description = <<-EOT
-    Redirect http:// to https:// on GitHub Pages. GitHub can only turn this on
-    once it has issued the certificate for the domain, which takes a few
-    minutes after the domain changes. Leave null (unmanaged) for the first
-    apply, then set it to true.
+    Redirect http:// to https:// on GitHub Pages. GitHub only allows this once
+    it has issued the certificate for the domain, a one-off that takes a few
+    minutes to an hour after the domain changes. If you change the domain, set
+    this to null for that apply, then back to true once the certificate is
+    ready.
   EOT
   type        = bool
-  default     = null
+  default     = true
 }
