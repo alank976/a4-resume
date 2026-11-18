@@ -62,19 +62,17 @@ Delete the existing `a4-resume` record in Cloudflare DNS. Terraform creates
 it again as the redirect, and it can't create a record that already exists.
 The old address is down only until the first apply finishes.
 
-### 6. Apply
+### 6. Apply, then turn on HTTPS enforcement by hand
 
-Merge to `main`, or run the **infra** workflow by hand. Check its plan first:
-it should add 2 DNS records and 1 ruleset, import the Pages site, and change
-only the Pages `cname`.
+1. Merge to `main`, or run the **infra** workflow by hand. Check its plan
+   first: it should add 2 DNS records and 1 ruleset, import the Pages site,
+   and change only the Pages `cname`.
+2. When **Settings → Pages** says the certificate is ready (usually a few
+   minutes, sometimes up to an hour), tick **Enforce HTTPS** there.
 
-### Changing the domain later
-
-GitHub can't enforce HTTPS until it has issued a certificate for the new
-domain. Set `enforce_https` to `null` in [`variables.tf`](variables.tf) for
-the apply that changes the domain. When **Settings → Pages** shows the
-certificate is ready (usually a few minutes, sometimes up to an hour), set it
-back to `true`.
+Terraform deliberately ignores the HTTPS setting. The GitHub provider
+(v6.13) removes the custom domain whenever it updates any other Pages
+setting, so the Pages resource only ever changes when the domain does.
 
 ## Running Terraform locally
 

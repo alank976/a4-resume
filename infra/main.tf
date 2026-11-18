@@ -73,14 +73,19 @@ import {
 }
 
 resource "github_repository_pages" "cv" {
-  repository     = var.github_repository
-  build_type     = "workflow"
-  cname          = local.cv_domain
-  https_enforced = var.enforce_https
+  repository = var.github_repository
+  build_type = "workflow"
+  cname      = local.cv_domain
 
-  # Destroying this resource would turn GitHub Pages off.
   lifecycle {
+    # Destroying this resource would turn GitHub Pages off.
     prevent_destroy = true
+
+    # integrations/github v6.13 sends "cname": null, which removes the custom
+    # domain, on any update that doesn't also change cname. So Terraform must
+    # never update anything else on this resource. "Enforce HTTPS" is ticked
+    # once by hand in Settings -> Pages after the certificate is issued.
+    ignore_changes = [https_enforced, public]
   }
 
   # GitHub checks the DNS record when the domain is set.
