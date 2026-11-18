@@ -15,7 +15,7 @@ terraform {
   # State lives in a Cloudflare R2 bucket through R2's S3-compatible API.
   # The endpoint and credentials come from the environment; see README.md.
   backend "s3" {
-    bucket = "a4-resume-tfstate"
+    bucket = "cv-infra-tfstate"
     key    = "a4-resume/terraform.tfstate"
     region = "auto"
 

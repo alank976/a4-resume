@@ -19,7 +19,7 @@ tags use the new domain. Terraform state is kept in a Cloudflare R2 bucket.
 1. In the Cloudflare dashboard, open **R2** and turn it on. The free tier
    (10 GB-month of storage, 1M writes and 10M reads a month) easily covers a
    state file. Cloudflare may still ask for a payment method.
-2. Create a bucket named `a4-resume-tfstate`.
+2. Create a bucket named `cv-infra-tfstate`.
 3. Go to **R2 → Manage API tokens → Create API token**. Give it
    **Object Read & Write** on that bucket only, then copy the
    **Access Key ID** and **Secret Access Key**.
