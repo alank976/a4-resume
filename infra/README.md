@@ -2,7 +2,7 @@
 
 Terraform for the CV's domain:
 
-- `cv.alankan.dev`: a DNS-only CNAME in Cloudflare that points at GitHub Pages
+- `cv.alankan.dev`: a CNAME to GitHub Pages, proxied through Cloudflare
 - `a4-resume.alankan.dev`: proxied through Cloudflare, with a 301 redirect to
   `cv.alankan.dev`
 - the custom domain setting on this repository's GitHub Pages site
@@ -62,17 +62,30 @@ Delete the existing `a4-resume` record in Cloudflare DNS. Terraform creates
 it again as the redirect, and it can't create a record that already exists.
 The old address is down only until the first apply finishes.
 
-### 6. Apply, then turn on HTTPS enforcement by hand
+### 6. Apply
 
-1. Merge to `main`, or run the **infra** workflow by hand. Check its plan
-   first: it should add 2 DNS records and 1 ruleset, import the Pages site,
-   and change only the Pages `cname`.
-2. When **Settings → Pages** says the certificate is ready (usually a few
-   minutes, sometimes up to an hour), tick **Enforce HTTPS** there.
+Merge to `main`, or run the **infra** workflow by hand. Check its plan first:
+it should add 2 DNS records and 1 ruleset, import the Pages site, and change
+only the Pages `cname`.
 
-Terraform deliberately ignores the HTTPS setting. The GitHub provider
-(v6.13) removes the custom domain whenever it updates any other Pages
-setting, so the Pages resource only ever changes when the domain does.
+## HTTPS
+
+`cv.alankan.dev` is proxied through Cloudflare, so visitors get Cloudflare's
+certificate. Two Cloudflare settings matter, both under **SSL/TLS** for
+`alankan.dev` (they apply to the whole zone, not just the CV):
+
+- **Encryption mode: Full.** Cloudflare then connects to GitHub over HTTPS
+  but doesn't require a certificate for `cv.alankan.dev` there. **Full
+  (strict)** would fail, because GitHub can't issue that certificate while
+  the record is proxied.
+- **Edge Certificates → Always Use HTTPS: on.** This redirects `http://` to
+  `https://`. GitHub's own **Enforce HTTPS** box stays unavailable while the
+  record is proxied.
+
+Terraform deliberately ignores the GitHub Pages HTTPS setting anyway. The
+GitHub provider (v6.13) removes the custom domain whenever it updates any
+other Pages setting, so the Pages resource only ever changes when the domain
+does.
 
 ## Running Terraform locally
 

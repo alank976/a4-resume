@@ -9,15 +9,17 @@ data "cloudflare_zone" "this" {
   }
 }
 
-# cv.alankan.dev -> GitHub Pages. Must stay DNS-only (not proxied) so GitHub
-# can issue and renew the HTTPS certificate for the domain.
+# cv.alankan.dev -> GitHub Pages, proxied through Cloudflare. Visitors get
+# Cloudflare's certificate, so HTTPS doesn't depend on GitHub issuing one.
+# GitHub's own DNS check and certificate for the domain won't work while this
+# is proxied; keep the zone's SSL/TLS mode at Full, not Full (strict).
 resource "cloudflare_dns_record" "cv" {
   zone_id = data.cloudflare_zone.this.zone_id
   name    = local.cv_domain
   type    = "CNAME"
   content = "${var.github_owner}.github.io"
   ttl     = 1
-  proxied = false
+  proxied = true
   comment = "CV on GitHub Pages, managed by Terraform in ${var.github_owner}/${var.github_repository}"
 }
 
